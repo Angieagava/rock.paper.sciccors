@@ -1,0 +1,32 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-size: 18px;
+	margin: 0 auto;
+	background-color: #e1dccc;
+}
+
+.table {
+	margin: 0 auto;
+	width: 20vw;
+	border: 1px dotted white;
+}
+
+button {
+	height: 100px;
+}
+
+tr {
+	height: 50px;
+}
+
+.pick-button {
+	visibility: hidden;
+}
+
+#roundResult {
+	maring: 0 auto;
+	padding: 10px;
+	border: 1px solid white;
+	margin-top: 30px;
+}
