@@ -3,7 +3,8 @@ body {
 	text-align: center;
 	font-size: 18px;
 	margin: 0 auto;
-	background-color: #e1dccc;
+	background-image: url('http://www.intrawallpaper.com/static/images/White-Background-9B1.jpg');
+	background-width: 100vw;
 }
 
 .table {
