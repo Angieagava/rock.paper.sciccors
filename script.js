@@ -1,4 +1,4 @@
-var computer = {
+const computer = {
 
 	name: 'computer',
 	score: 0,
@@ -6,7 +6,7 @@ var computer = {
 
 };
 
-var player = {
+const player = {
 
 	name: '',
 	score: 0,
@@ -14,9 +14,9 @@ var player = {
 
 };
 
-var round = 0;
+let round = 0;
 
-var newGame = function() {
+const newGame = () => {
 
 	computer.score = 0;
 	computer.pick = "";
@@ -25,9 +25,9 @@ var newGame = function() {
 	round = 0;
 	player.name = prompt ("Jak się nazywasz?", "John Smith");
 	document.getElementById("playerName").innerHTML = player.name;
-	var buttons = document.getElementsByClassName("pick-button");
+	const buttons = document.getElementsByClassName("pick-button");
 
-		for(var i = 0; i < buttons.length; i++) {
+		for(let i = 0; i < buttons.length; i++) {
 
 			buttons[i].style.visibility = 'visible';
 
@@ -59,7 +59,7 @@ function computerPick() {
 
 function checkResult() {
 
-	var gameResult;
+	let gameResult;
 
 	if (player.pick === computer.pick) {
 
@@ -132,9 +132,9 @@ if ( (player.score >= 10) || (computer.score >=10) ) {
 
 		} 
 
-		var buttons = document.getElementsByClassName("pick-button");
+		const buttons = document.getElementsByClassName("pick-button");
 
-		for(var i = 0; i < buttons.length; i++) {
+		for(let i = 0; i < buttons.length; i++) {
 
 			buttons[i].style.visibility = 'hidden';
 
